@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:#e9c9e5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        form{
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 10 rgb(0,0,0);
+            width:300px ;
+            
+        }
+        h1{
+            text-align: center;
+            color: #333;
+        }
+        .forme-group{
+            margin-bottom: 15px;
+
+        }
+        label{
+            display: block;
+            margin-bottom: 5px;
+            color: #666;
+
+        }
+        input,select,button{
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #333;
+            box-sizing: border-box;
+        }
+    
+
+
+    </style>
+</head>
+<body>
+
+    <form action="www.destino.com" method="post">
+        <h1>Cadastro SENAI</h1>
+        <div class="form.group">
+            <label for="nome">Nome</label>
+            <input type="text" id="noma" placeholder="Nome e Sobrenome" required>
+        </div>
+
+      <div class="form.group">
+      <label for=" Email   "> Email </label>
+      <input type=" email " id=" email " placeholder=" Digite seu E-mail " required>
+    </div>
+
+     <div class="form.group"> 
+        <label for="celular">Celular</label>
+        <input type="tel" id="celular" placeholder="(00)00000-0000"required>
+     </div>
+     <div class="form.group">
+        <label for="data de nascimento ">Data de Nascimento </label>
+        <input type="date" id="data de nascimento" min="2008.01.08" max="2028.06.30" required>
+   </div>
+
+   <div class="form.group">
+   <label >Categoria</label>
+   <div class="form.group.inline">
+    <label ><input type="radio" name="tipo">Estudante</label>
+    <label ><input type="radio" name="tipo">Professor </label>
+    <label ><input type="radio" name="tipo">Funcionarios</label>
+   </div>
+</div>
+
+<div class="form.group">
+<label >Área de interesse</label>
+<div class="form.group.inline">
+    <label ><input type="checkbox" >Mecatronica</label>
+    <label ><input type="checkbox" >T.I</label>
+    <label ><input type="checkbox" >Eletrica</label>
+</div>
+   </div>
+
+<div class="form.group">
+<label for="cursos">Quantidade de cursos realizados </label>
+<input type="number" id="cursos" min="0"required>
+</div>
+
+<div class="form.group">
+    <label for="unidade">Selecione a unidade Desejada</label>
+<select  id="unidade" required>
+    <option >SENAI Sorocaba - Santa Rosalia</option>
+    <option >SENAI Itu</option>
+    <option >SENAI Ourinhos</option>
+   </select>
+</div>
+
+
+<div class="form.group">
+    <label for="foto">Insira sua Foto</label>
+    <input type="file" id="foto">
+</div>
+
+<div class="form.group">
+    <input type="reset" value="Reset">
+    <button type="submit">Enviar Cadastro</button>
+</div>
+</form>
+</body>
+</html>
